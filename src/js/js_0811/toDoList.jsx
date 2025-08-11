@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './toDoList.css';
 
 export default function ToDoList() {
     const [toDoList, setToDoList] = useState([]);
@@ -18,7 +19,7 @@ export default function ToDoList() {
                     추가
                     </button>
             <div>
-                <ul>
+                <ul className="toDo">
                 {toDoList.map((toDo, index) => (
                     <li key={index}>{toDo} <button onClick={() => {
                         const remove = toDoList.filter((_, i) => i !== index);

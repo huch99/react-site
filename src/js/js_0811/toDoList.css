@@ -1,0 +1,24 @@
+.toDo {
+    list-style-type: none;
+    width: 500px;
+    height: 500px;
+    border: 3px solid grey;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.toDo > li {
+    width: 400px;
+    font-size: 1.1em;
+    border-bottom: 2px solid grey;
+    margin: 5px auto;
+    text-align: left;
+    position: relative;
+    padding: 10px;
+}
+
+.toDo > li > button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

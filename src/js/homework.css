@@ -1,0 +1,12 @@
+.hwul {
+    width: 500px;
+    height: 500px;
+    list-style-type: none;
+    font-size: 1.3em;
+    text-align: left;
+}
+
+.hwul > li {
+    border-bottom: 3px solid grey;
+    padding: 10px;
+}
