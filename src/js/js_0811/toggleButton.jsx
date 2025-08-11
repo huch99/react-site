@@ -11,7 +11,9 @@ export default function ToggleButton() {
                 setIsOn(!isOn);
                 bodyColor.backgroundColor = isOn ? 'black' : 'white';
                 bodyColor.color = isOn ? 'white' : 'black';
-                }}>{isOn ? 'ON' : 'OFF'}</button>
+            }}>
+                {isOn ? 'ON' : 'OFF'}
+            </button>
         </>
     );
 }
