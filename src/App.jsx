@@ -4,6 +4,7 @@ import './App.css'
 import Layout from './compo/Layout';
 import Home from './compo/Home';
 import Homework0811 from './js/js_0811/index0811';
+import Homework0812 from './js/js_0812/index0812';
 import ColorChange from './js/js_0811/colorChange'
 import Comment from './js/js_0811/comment';
 import ToDoList from './js/js_0811/toDoList';
@@ -38,6 +39,7 @@ function App() {
           <Route index element={<Home />}/>
           <Route path='/react-site/' element={<Layout />}/>
           <Route path='/react-site/0811/' element={<Homework0811 />}/>
+          <Route path='/react-site/0812/' element={<Homework0812 />}/>
 
 
           {mainList.map((main, index) => (
