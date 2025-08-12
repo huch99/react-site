@@ -10,6 +10,12 @@ import ToDoList from './js/js_0811/toDoList';
 import ToggleButton from './js/js_0811/toggleButton';
 import { useState } from 'react';
 
+import MyEffect from './js/js_0812/MyEffect';
+import MyEffect02 from './js/js_0812/MyEffect02';
+import MyEffect03 from './js/js_0812/MyEffect03';
+import MyEffect04 from './js/js_0812/MyEffect04';
+import MyEffect05 from './js/js_0812/MyEffect05';
+
 
 function App() {
   const [mainList, setMainList] = useState([
@@ -17,6 +23,12 @@ function App() {
     {linkName: '0811/comment', tagName : <Comment />},
     {linkName: '0811/toDoList', tagName : <ToDoList />},
     {linkName: '0811/toggleButton', tagName : <ToggleButton />},
+
+    {linkName: '0812/myeffect01', tagName : <MyEffect />},
+    {linkName: '0812/myeffect02', tagName : <MyEffect02 />},
+    {linkName: '0812/myeffect03', tagName : <MyEffect03 />},
+    {linkName: '0812/myeffect04', tagName : <MyEffect04 />},
+    {linkName: '0812/myeffect05', tagName : <MyEffect05 />}
   ]);
   return (
     <>
