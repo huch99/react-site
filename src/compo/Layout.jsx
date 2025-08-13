@@ -4,7 +4,8 @@ import { Link, Outlet } from "react-router-dom";
 function Layout() {
   const [links, setLinks] = useState([
     {linkName: '0811', tagName: '0811 과제'},
-    {linkName: '0812', tagName: '0812 과제'}
+    {linkName: '0812', tagName: '0812 과제'},
+    {linkName: '0813', tagName: '0813 과제'}
   ]);
   return (
     <div>
