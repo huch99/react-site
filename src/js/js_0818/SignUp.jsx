@@ -16,6 +16,11 @@ const SignUp = () => {
                 setBgColor(gender);
                 setIsOn(true);
                 setName('');
+                if(name === '') {
+                    setIsOn(false);
+                    setGender('남자');
+                    setName('');
+                }
             }}>
                 <label>이름 :
                     <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder='이름' />
