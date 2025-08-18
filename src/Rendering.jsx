@@ -12,7 +12,7 @@ const Rendering = () => {
     ]
 
      const handleLogin = () => {
-        const userExists = users.some(
+        const userExists = users.some( //users 안에 id와 pw가 일치하는 사용자가 하나라도 존재하는 지에 대한 검사 구문
             (user) => user.id === userId && user.pw === userPw
         );
 
