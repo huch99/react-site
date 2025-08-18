@@ -31,6 +31,10 @@ import Ex_zustand_3 from './js/js_0818/Ex_zustand_3';
 import Ex_reduxTool from './js/js_0818/Ex_reduxTool';
 import RealRedux from './RealRedux';
 import Comment_02 from './js/js_0818/Comment_02';
+import RealNotification from './js/js_0818/RealNotification';
+import Accommodate from './js/js_0818/Accommodate';
+import ConfirmButton from './js/js_0818/ConfirmButton';
+import Rendering from './Rendering';
 
 
 
@@ -57,8 +61,11 @@ function App() {
     { linkName: '0818/exjs2', tagName: <Ex_js_2 /> },
     { linkName: '0818/exzustand', tagName: <Ex_zustand_3 /> },
     { linkName: '0818/exreduxtool', tagName: <RealRedux /> },
-    { linkName: '0818/comment', tagName: <Comment_02 /> }
-
+    { linkName: '0818/comment', tagName: <Comment_02 /> },
+    { linkName: '0818/notification', tagName: <RealNotification /> },
+    { linkName: '0818/accommodate', tagName: <Accommodate /> },
+    { linkName: '0818/confirmbutton', tagName: <ConfirmButton /> },
+    { linkName: '0818/rendering', tagName: <Rendering /> }
   ]);
   return (
     <>
