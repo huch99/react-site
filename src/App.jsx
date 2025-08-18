@@ -30,6 +30,7 @@ import Ex_js_2 from './js/js_0818/Ex_js_2';
 import Ex_zustand_3 from './js/js_0818/Ex_zustand_3';
 import Ex_reduxTool from './js/js_0818/Ex_reduxTool';
 import RealRedux from './RealRedux';
+import Comment_02 from './js/js_0818/Comment_02';
 
 
 
@@ -55,7 +56,9 @@ function App() {
     { linkName: '0818/realvarpro', tagName: <RealVarProj /> },
     { linkName: '0818/exjs2', tagName: <Ex_js_2 /> },
     { linkName: '0818/exzustand', tagName: <Ex_zustand_3 /> },
-    { linkName: '0818/exreduxtool', tagName: <RealRedux /> }
+    { linkName: '0818/exreduxtool', tagName: <RealRedux /> },
+    { linkName: '0818/comment', tagName: <Comment_02 /> }
+
   ]);
   return (
     <>

@@ -6,7 +6,8 @@ const Homework0818 = () => {
         {linkName: 'realvarpro', tagName: '전역변수 - context'},
         {linkName: 'exjs2', tagName: '전역변수 - store'},
         {linkName: 'exzustand', tagName: '전역변수 - zustand'},
-        {linkName: 'exreduxtool', tagName: '전역변수 - Redux'}
+        {linkName: 'exreduxtool', tagName: '전역변수 - Redux'},
+        {linkName: 'comment', tagName: '댓글달기'}
     ]);
 
     return (
