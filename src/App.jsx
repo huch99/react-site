@@ -29,12 +29,14 @@ import RealVarProj from './js/js_0818/RealVarProj';
 import Ex_js_2 from './js/js_0818/Ex_js_2';
 import Ex_zustand_3 from './js/js_0818/Ex_zustand_3';
 import Ex_reduxTool from './js/js_0818/Ex_reduxTool';
-import RealRedux from './RealRedux';
+import RealRedux from './js/js_0818/RealRedux';
 import Comment_02 from './js/js_0818/Comment_02';
 import RealNotification from './js/js_0818/RealNotification';
 import Accommodate from './js/js_0818/Accommodate';
 import ConfirmButton from './js/js_0818/ConfirmButton';
-import Rendering from './Rendering';
+
+import SignUp from './js/js_0818/SignUp';
+import Rendering from './js/js_0818/Rendering';
 
 
 
@@ -65,7 +67,8 @@ function App() {
     { linkName: '0818/notification', tagName: <RealNotification /> },
     { linkName: '0818/accommodate', tagName: <Accommodate /> },
     { linkName: '0818/confirmbutton', tagName: <ConfirmButton /> },
-    { linkName: '0818/rendering', tagName: <Rendering /> }
+    { linkName: '0818/rendering', tagName: <Rendering /> },
+    { linkName: '0818/signup', tagName: <SignUp /> },
   ]);
   return (
     <>

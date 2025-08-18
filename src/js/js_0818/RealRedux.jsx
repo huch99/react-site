@@ -1,6 +1,6 @@
 import React from 'react';
-import Ex_reduxTool from './js/js_0818/Ex_reduxTool';
-import { store_redux_configure } from './js/js_0818/store_redux_configure';
+import Ex_reduxTool from './Ex_reduxTool';
+import { store_redux_configure } from './store_redux_configure';
 import { Provider } from 'react-redux';
 
 const RealRedux = () => {

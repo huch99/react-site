@@ -11,7 +11,9 @@ const Homework0818 = () => {
         { linkName: 'notification', tagName: '생명주기' },
         { linkName: 'accommodate', tagName: '커스텀 훅 활용' },
         { linkName: 'confirmbutton', tagName: '클릭 이벤트 처리' },
-        { linkName: 'rendering', tagName: '조건부 렌더링' }
+        { linkName: 'rendering', tagName: '조건부 렌더링' },
+        { linkName: 'signup', tagName: '사용자 정보 입력받기' },
+
     ]);
 
     return (
