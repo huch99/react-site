@@ -7,6 +7,7 @@ import Home from './compo/Home';
 import Homework0811 from './js/js_0811/index0811';
 import Homework0812 from './js/js_0812/index0812';
 import Homework0813 from './js/js_0813/Homework0813';
+import Homework0818 from './js/js_0818/Homework0818';
 import ColorChange from './js/js_0811/colorChange'
 import Comment from './js/js_0811/comment';
 import ToDoList from './js/js_0811/toDoList';
@@ -24,6 +25,8 @@ import MyuseReducer from './js/js_0813/MyuseReducer';
 import MyuseReducerEx from './js/js_0813/MyuseReducerEx';
 import MyuseCallback from './js/js_0813/MyuseCallback';
 import MyuseMemo from './js/js_0813/MyuseMemo';
+import RealVarProj from './js/js_0818/RealVarProj';
+
 
 
 function App() {
@@ -43,7 +46,9 @@ function App() {
     { linkName: '0813/myusereducer', tagName: <MyuseReducer /> },
     { linkName: '0813/myusereducerex', tagName: <MyuseReducerEx /> },
     { linkName: '0813/myusecallback', tagName: <MyuseCallback /> },
-    { linkName: '0813/myusememo', tagName: <MyuseMemo /> }
+    { linkName: '0813/myusememo', tagName: <MyuseMemo /> },
+
+    { linkName: '0818/realvarpro', tagName: <RealVarProj /> },
   ]);
   return (
     <>
@@ -55,6 +60,7 @@ function App() {
           <Route path='/react-site/0811/' element={<Homework0811 />} />
           <Route path='/react-site/0812/' element={<Homework0812 />} />
           <Route path='/react-site/0813/' element={<Homework0813 />} />
+          <Route path='/react-site/0818/' element={<Homework0818 />} />
 
           {mainList.map((main, index) => (
             <Route path={`/react-site/${main.linkName}`} element={main.tagName} />
