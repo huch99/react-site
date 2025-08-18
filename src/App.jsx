@@ -37,6 +37,7 @@ import ConfirmButton from './js/js_0818/ConfirmButton';
 
 import SignUp from './js/js_0818/SignUp';
 import Rendering from './js/js_0818/Rendering';
+import Calculator from './js/js_0818/Calculator';
 
 
 
@@ -69,6 +70,7 @@ function App() {
     { linkName: '0818/confirmbutton', tagName: <ConfirmButton /> },
     { linkName: '0818/rendering', tagName: <Rendering /> },
     { linkName: '0818/signup', tagName: <SignUp /> },
+    { linkName: '0818/calculator', tagName: <Calculator /> }
   ]);
   return (
     <>
