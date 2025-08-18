@@ -26,6 +26,7 @@ import MyuseReducerEx from './js/js_0813/MyuseReducerEx';
 import MyuseCallback from './js/js_0813/MyuseCallback';
 import MyuseMemo from './js/js_0813/MyuseMemo';
 import RealVarProj from './js/js_0818/RealVarProj';
+import Ex_js_2 from './js/js_0818/Ex_js_2';
 
 
 
@@ -49,6 +50,7 @@ function App() {
     { linkName: '0813/myusememo', tagName: <MyuseMemo /> },
 
     { linkName: '0818/realvarpro', tagName: <RealVarProj /> },
+    { linkName: '0818/exjs2', tagName: <Ex_js_2 /> },
   ]);
   return (
     <>

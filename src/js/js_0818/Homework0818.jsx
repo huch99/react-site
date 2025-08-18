@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 const Homework0818 = () => {
     const [hws, setHws] = useState([
         {linkName: 'realvarpro', tagName: '전역변수 - 1'},
+        {linkName: 'exjs2', tagName: '전역변수 - 2'},
     ]);
 
     return (
