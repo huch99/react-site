@@ -13,7 +13,8 @@ const Homework0818 = () => {
         { linkName: 'confirmbutton', tagName: '클릭 이벤트 처리' },
         { linkName: 'rendering', tagName: '조건부 렌더링' },
         { linkName: 'signup', tagName: '사용자 정보 입력받기' },
-        { linkName: 'calculator', tagName: '온도 입력하기' }
+        { linkName: 'calculator', tagName: '온도 입력하기' },
+        { linkName: 'darkorlight', tagName: '테마변경' }
 
     ]);
 
