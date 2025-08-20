@@ -98,20 +98,20 @@ function App() {
           <Route path='/react-site/0813/' element={<Homework0813 />} />
           <Route path='/react-site/0818/' element={<Homework0818 />} />
 
-
-                <Route
-                    path='/react-site/miniblog'
-                    element={<MainPage />}
-                />
-                <Route
-                    path='/react-site/post-write'
-                    element={<PostWritePage />}
-                />
-                <Route
-                    path='/react-site/post/:postId'
-                    element={<PostViewPage />}
-                />
-
+          {/* 블로그 */}
+          <Route
+            path='/react-site/miniblog'
+            element={<MainPage />}
+          />
+          <Route
+            path='/react-site/post-write'
+            element={<PostWritePage />}
+          />
+          <Route
+            path='/react-site/post/:postId'
+            element={<PostViewPage />}
+          />
+          {/* 블로그 */}
 
           {mainList.map((main, index) => (
             <Route path={`/react-site/${main.linkName}`} element={main.tagName} />
