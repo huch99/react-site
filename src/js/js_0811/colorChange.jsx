@@ -12,7 +12,7 @@ export default function ColorChange() {
             <h2 style={{color}}>색상 변경</h2>
 
             {colorList.map((clr, index) => (
-                <button value={clr} onClick={(e) => (setColor(e.target.value))} key={index}> {clr} </button>
+                <button className="changeBtn" value={clr} onClick={(e) => (setColor(e.target.value))} key={index}> {clr} </button>
             ))}
         </>
     );

@@ -40,6 +40,18 @@ import Rendering from './js/js_0818/Rendering';
 import Calculator from './js/js_0818/Calculator';
 import DarkOrLight from './js/js_0818/DarkOrLight';
 
+import styled from 'styled-components';
+// Pages
+import MainPage from './components/blog_pages/MainPage';
+import PostWritePage from './components/blog_pages/PostWritePage';
+import PostViewPage from './components/blog_pages/PostViewPage';
+
+const MainTitleText = styled.p`
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+`;
+
 
 
 function App() {
@@ -85,6 +97,21 @@ function App() {
           <Route path='/react-site/0812/' element={<Homework0812 />} />
           <Route path='/react-site/0813/' element={<Homework0813 />} />
           <Route path='/react-site/0818/' element={<Homework0818 />} />
+
+
+                <Route
+                    path='/react-site/miniblog'
+                    element={<MainPage />}
+                />
+                <Route
+                    path='/react-site/post-write'
+                    element={<PostWritePage />}
+                />
+                <Route
+                    path='/react-site/post/:postId'
+                    element={<PostViewPage />}
+                />
+
 
           {mainList.map((main, index) => (
             <Route path={`/react-site/${main.linkName}`} element={main.tagName} />

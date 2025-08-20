@@ -6,7 +6,8 @@ function Layout() {
     {linkName: '0811', tagName: '0811 과제'},
     {linkName: '0812', tagName: '0812 과제'},
     {linkName: '0813', tagName: '0813 과제'},
-    {linkName: '0818', tagName: '0818 과제'}
+    {linkName: '0818', tagName: '0818 과제'},
+    {linkName: 'miniblog', tagName: '미니 블로그'}
   ]);
   return (
     <div>
