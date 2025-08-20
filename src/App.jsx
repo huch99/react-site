@@ -45,6 +45,7 @@ import styled from 'styled-components';
 import MainPage from './components/blog_pages/MainPage';
 import PostWritePage from './components/blog_pages/PostWritePage';
 import PostViewPage from './components/blog_pages/PostViewPage';
+import WebDesign from './js/js_0820/WebDesign';
 
 const MainTitleText = styled.p`
     font-size: 24px;
@@ -84,7 +85,8 @@ function App() {
     { linkName: '0818/rendering', tagName: <Rendering /> },
     { linkName: '0818/signup', tagName: <SignUp /> },
     { linkName: '0818/calculator', tagName: <Calculator /> },
-    { linkName: '0818/darkorlight', tagName: <DarkOrLight /> }
+    { linkName: '0818/darkorlight', tagName: <DarkOrLight /> },
+    { linkName: '0820/webdesign', tagName: <WebDesign /> }    
   ]);
   return (
     <>
