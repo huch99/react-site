@@ -47,11 +47,6 @@ import PostWritePage from './components/blog_pages/PostWritePage';
 import PostViewPage from './components/blog_pages/PostViewPage';
 import WebDesign from './js/js_0820/WebDesign';
 
-const MainTitleText = styled.p`
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-`;
 
 
 
@@ -86,41 +81,46 @@ function App() {
     { linkName: '0818/signup', tagName: <SignUp /> },
     { linkName: '0818/calculator', tagName: <Calculator /> },
     { linkName: '0818/darkorlight', tagName: <DarkOrLight /> },
-    { linkName: '0820/webdesign', tagName: <WebDesign /> }    
+    { linkName: '0820/webdesign', tagName: <WebDesign /> }
   ]);
   return (
-    <>
-      <h1>과제방</h1>
-      <BrowserRouter>
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path='/react-site/' element={<Layout />} />
-          <Route path='/react-site/0811/' element={<Homework0811 />} />
-          <Route path='/react-site/0812/' element={<Homework0812 />} />
-          <Route path='/react-site/0813/' element={<Homework0813 />} />
-          <Route path='/react-site/0818/' element={<Homework0818 />} />
+    <div className='container'>
+      <div className='header'>
+        <h1>정희찬</h1>
+        <h1>REACT</h1>
+      </div>
+      <div className="main">
+        <BrowserRouter>
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path='/react-site/' element={<Layout />} />
+            <Route path='/react-site/0811/' element={<Homework0811 />} />
+            <Route path='/react-site/0812/' element={<Homework0812 />} />
+            <Route path='/react-site/0813/' element={<Homework0813 />} />
+            <Route path='/react-site/0818/' element={<Homework0818 />} />
 
-          {/* 블로그 */}
-          <Route
-            path='/react-site/miniblog'
-            element={<MainPage />}
-          />
-          <Route
-            path='/react-site/post-write'
-            element={<PostWritePage />}
-          />
-          <Route
-            path='/react-site/post/:postId'
-            element={<PostViewPage />}
-          />
-          {/* 블로그 */}
+            {/* 블로그 */}
+            <Route
+              path='/react-site/miniblog'
+              element={<MainPage />}
+            />
+            <Route
+              path='/react-site/post-write'
+              element={<PostWritePage />}
+            />
+            <Route
+              path='/react-site/post/:postId'
+              element={<PostViewPage />}
+            />
+            {/* 블로그 */}
 
-          {mainList.map((main, index) => (
-            <Route path={`/react-site/${main.linkName}`} element={main.tagName} />
-          ))}
-        </Routes>
-      </BrowserRouter>
-    </>
+            {mainList.map((main, index) => (
+              <Route path={`/react-site/${main.linkName}`} element={main.tagName} />
+            ))}
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </div>
   )
 }
 

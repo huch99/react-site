@@ -4,20 +4,32 @@ import '../homework.css'
 
 export default function Homework0811() {
     const [hws, setHws] = useState([
-        { linkName: 'colorChange', tagName: '색깔 바꾸기' },
-        { linkName: 'comment', tagName: '댓글 달기' },
-        { linkName: 'todolist', tagName: '할 일 목록' },
-        { linkName: 'togglebutton', tagName: '토글 버튼' }
+        { linkName: 'colorChange', tagName: '색깔 바꾸기', date: '0811' },
+        { linkName: 'comment', tagName: '댓글 달기', date: '0811' },
+        { linkName: 'todolist', tagName: '할 일 목록', date: '0811' },
+        { linkName: 'togglebutton', tagName: '토글 버튼', date: '0811' }
     ])
     return (
         <>
-            <ul className='hwul'>
-                {hws.map((hw, index) => (
-                    <li>
-                        <Link to={`/react-site/0811/${hw.linkName}`} key={index}> {hw.tagName} </Link>
-                    </li>
-                ))}
-            </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th>날짜</th>
+                        <th>과제</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {hws.map((hw, index) => (
+                        <tr>
+                            <td>{hw.date}</td>
+                            <td><Link to={hw.linkName}>{hw.tagName}</Link></td>
+                        </tr>
+                    ))}
+                </tbody>
+
+
+            </table>
         </>
     );
 }
